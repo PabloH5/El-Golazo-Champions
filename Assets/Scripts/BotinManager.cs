@@ -6,6 +6,7 @@ public class BotinManager : MonoBehaviour
 {
     public GameObject suela;
     public GameObject cordon;
+    public GameObject Smoke;
 
     void Start()
     {
@@ -22,6 +23,7 @@ public class BotinManager : MonoBehaviour
         if (collision.gameObject.CompareTag("Suela"))
         {
             //AQUI VA LA ANIMACIÓN
+            Smoke.SetActive(true);
             suela.SetActive(true);
             Debug.Log("Animacion de humo nashe");
         }
