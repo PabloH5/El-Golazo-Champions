@@ -1186,13 +1186,14 @@ GameObject:
   - component: {fileID: 1032150032}
   - component: {fileID: 1032150034}
   - component: {fileID: 1032150033}
+  - component: {fileID: 1032150035}
   m_Layer: 0
-  m_Name: Particle System
+  m_Name: SMOKE
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1032150032
 Transform:
   m_ObjectHideFlags: 0
@@ -1202,8 +1203,8 @@ Transform:
   m_GameObject: {fileID: 1032150031}
   serializedVersion: 2
   m_LocalRotation: {x: -0, y: -0.7071068, z: -0.7071068, w: 0}
-  m_LocalPosition: {x: -0.1, y: -0.19, z: -0.19}
-  m_LocalScale: {x: 0.03640347, y: 0.03640348, z: 0.03640348}
+  m_LocalPosition: {x: -0.1, y: -0.19, z: 0.09}
+  m_LocalScale: {x: 0.030758528, y: 0.030758537, z: 0.030758537}
   m_ConstrainProportionsScale: 0
   m_Children: []
   m_Father: {fileID: 1987410324}
@@ -1290,14 +1291,14 @@ ParticleSystem:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1032150031}
   serializedVersion: 8
-  lengthInSec: 2
+  lengthInSec: 1
   simulationSpeed: 1
   stopAction: 0
   cullingMode: 0
   ringBufferMode: 0
   ringBufferLoopRange: {x: 0, y: 1}
   emitterVelocityMode: 1
-  looping: 1
+  looping: 0
   prewarm: 0
   playOnAwake: 1
   useUnscaledTime: 0
@@ -1418,7 +1419,7 @@ ParticleSystem:
     startSpeed:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 6
+      scalar: 8
       minScalar: 5
       maxCurve:
         serializedVersion: 2
@@ -2119,7 +2120,7 @@ ParticleSystem:
     rateOverTime:
       serializedVersion: 2
       minMaxState: 0
-      scalar: 35
+      scalar: 100
       minScalar: 10
       maxCurve:
         serializedVersion: 2
@@ -6005,6 +6006,21 @@ ParticleSystem:
         m_PostInfinity: 2
         m_RotationOrder: 4
     vectorLabel1_3: W
+--- !u!111 &1032150035
+Animation:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1032150031}
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Animation: {fileID: 7400000, guid: 6fb79226ec754194e9bf20042b484e94, type: 2}
+  m_Animations: []
+  m_WrapMode: 0
+  m_PlayAutomatically: 1
+  m_AnimatePhysics: 0
+  m_CullingType: 0
 --- !u!1 &1092326778
 GameObject:
   m_ObjectHideFlags: 0
