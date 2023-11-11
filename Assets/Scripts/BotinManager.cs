@@ -5,32 +5,31 @@ using UnityEngine;
 public class BotinManager : MonoBehaviour
 {
     public GameObject suela;
-    public GameObject cordon;
     public GameObject Smoke;
 
-    void Start()
-    {
+    public Material red;
+    public Material green;
+    public Material blue;
 
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-
-    }
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("Suela"))
+        if (collision.gameObject.CompareTag("SuelaRed"))
         {
-            //AQUI VA LA ANIMACIÓN
             Smoke.SetActive(true);
             suela.SetActive(true);
-            Debug.Log("Animacion de humo nashe");
+            suela.GetComponent<Renderer>().material = red;
         }
-        if (collision.gameObject.CompareTag("Cordon"))
+        if (collision.gameObject.CompareTag("SuelaGreen"))
         {
-            cordon.SetActive(true);
-            Debug.Log("Animacion de humo nashe");
+            Smoke.SetActive(true);
+            suela.SetActive(true);
+            suela.GetComponent<Renderer>().material = green;
+        }
+        if (collision.gameObject.CompareTag("SuelaBlue"))
+        {
+            Smoke.SetActive(true);
+            suela.SetActive(true);
+            suela.GetComponent<Renderer>().material = blue;
         }
     }
 }

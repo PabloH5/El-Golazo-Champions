@@ -9,6 +9,9 @@ TagManager:
   - Suela
   - Botin
   - Cordon
+  - SuelaRed
+  - SuelaGreen
+  - SuelaBlue
   layers:
   - Default
   - TransparentFX
