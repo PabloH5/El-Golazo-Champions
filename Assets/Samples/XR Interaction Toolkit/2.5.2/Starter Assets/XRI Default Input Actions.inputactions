@@ -2600,6 +2600,34 @@
                     "isPartOfComposite": false
                 }
             ]
+        },
+        {
+            "name": "Run",
+            "id": "9827e52f-b37f-40b8-9cd8-0d02fb7bbe9a",
+            "actions": [
+                {
+                    "name": "PressRun",
+                    "type": "Button",
+                    "id": "17f6038b-a2b2-46f6-bb22-e6d3e770546f",
+                    "expectedControlType": "Button",
+                    "processors": "",
+                    "interactions": "",
+                    "initialStateCheck": false
+                }
+            ],
+            "bindings": [
+                {
+                    "name": "",
+                    "id": "037b5ac0-625e-40c6-81a2-8c009f3c9df1",
+                    "path": "<OculusTouchController>{RightHand}/triggerPressed",
+                    "interactions": "",
+                    "processors": "",
+                    "groups": "",
+                    "action": "PressRun",
+                    "isComposite": false,
+                    "isPartOfComposite": false
+                }
+            ]
         }
     ],
     "controlSchemes": [
