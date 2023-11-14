@@ -6224,8 +6224,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   runReference: {fileID: 5234496602571687282, guid: c348712bda248c246b8c49b3db54643f, type: 3}
   dynamicMoveProvider: {fileID: 1092326781}
-  runningSpeedMultiplier: 0.5
+  runningSpeedMultiplier: 0.25
   runningSpeedDebuff: 0.25
+  cooldownDebuff: 1
 --- !u!1 &1159474129
 GameObject:
   m_ObjectHideFlags: 0

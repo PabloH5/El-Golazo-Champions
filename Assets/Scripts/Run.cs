@@ -11,9 +11,9 @@ public class Run : MonoBehaviour
     public DynamicMoveProvider dynamicMoveProvider;
 
     public float runningSpeedMultiplier = 2f;
-    public float runningSpeedDebuff = 0.5f;
-
-    private float originalSpeed; 
+    public float runningSpeedDebuff = 0.1f;
+    public float cooldownDebuff = 0.0f;
+    private float originalSpeed;
 
     private void Awake()
     {
@@ -21,36 +21,56 @@ public class Run : MonoBehaviour
         {
             originalSpeed = dynamicMoveProvider.moveSpeed;
         }
-
         runReference.action.started += StartRun;
+    }
+    void Start()
+    {
+        // Comienza a invocar el método repetidamente con un retraso inicial y luego cada 2.5 segundos.
+        InvokeRepeating(nameof(SpeedDebuff), cooldownDebuff, cooldownDebuff);
     }
 
     void Update()
     {
-        
-        
-        Invoke(nameof(SpeedDebuff), 3.0f);
+        // Invoke(nameof(SpeedDebuff), cooldownDebuff);
+        // SpeedDebuff();
+
+        Debug.Log("Velocidad actual: " + dynamicMoveProvider.moveSpeed);
     }
 
     private void OnDestroy()
     {
-        runReference.action.started -= StartRun;
+        // runReference.action.started -= StartRun;
     }
 
     private void StartRun(InputAction.CallbackContext context)
     {
-        
         if (dynamicMoveProvider != null)
         {
-            dynamicMoveProvider.moveSpeed *= dynamicMoveProvider.moveSpeed;
+            if (dynamicMoveProvider.moveSpeed <= 10)
+            {
+                dynamicMoveProvider.moveSpeed += (dynamicMoveProvider.moveSpeed * runningSpeedMultiplier);
+                Debug.Log("Velocidad actual SUAMADA : " + dynamicMoveProvider.moveSpeed);
+            }
+            else { Debug.Log("Mas rapido quel rasho mi papacho"); }
+
+
         }
     }
     private void SpeedDebuff()
     {
-        Debug.Log("Velocidad actual: " + dynamicMoveProvider.moveSpeed);
-        if(dynamicMoveProvider.moveSpeed>1 )
+        if (dynamicMoveProvider.moveSpeed > originalSpeed)
         {
-            dynamicMoveProvider.moveSpeed *= -runningSpeedDebuff;
+            if (dynamicMoveProvider.moveSpeed - runningSpeedDebuff < originalSpeed)
+            {
+                dynamicMoveProvider.moveSpeed = originalSpeed;
+                Debug.Log("Velocidad original: " + dynamicMoveProvider.moveSpeed);
+            }
+            else
+            {
+                dynamicMoveProvider.moveSpeed -= (dynamicMoveProvider.moveSpeed * runningSpeedDebuff);
+                Debug.Log("Velocidad actual reducida: " + dynamicMoveProvider.moveSpeed);
+            }
         }
+
     }
 }
