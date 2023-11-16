@@ -2603,12 +2603,12 @@
         },
         {
             "name": "Run",
-            "id": "9827e52f-b37f-40b8-9cd8-0d02fb7bbe9a",
+            "id": "2f5379f5-f11c-45ac-bedb-ee9efa5c791c",
             "actions": [
                 {
                     "name": "PressRun",
                     "type": "Button",
-                    "id": "17f6038b-a2b2-46f6-bb22-e6d3e770546f",
+                    "id": "01c307e3-dde6-447c-94ac-28fe1a77ba7f",
                     "expectedControlType": "Button",
                     "processors": "",
                     "interactions": "",
@@ -2618,7 +2618,7 @@
             "bindings": [
                 {
                     "name": "",
-                    "id": "037b5ac0-625e-40c6-81a2-8c009f3c9df1",
+                    "id": "d33c955a-57d1-4b1a-a1a4-ec97c03e586c",
                     "path": "<OculusTouchController>{RightHand}/triggerPressed",
                     "interactions": "",
                     "processors": "",

@@ -31,9 +31,6 @@ public class Run : MonoBehaviour
 
     void Update()
     {
-        // Invoke(nameof(SpeedDebuff), cooldownDebuff);
-        // SpeedDebuff();
-
         Debug.Log("Velocidad actual: " + dynamicMoveProvider.moveSpeed);
     }
 
