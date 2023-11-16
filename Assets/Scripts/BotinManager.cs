@@ -25,7 +25,6 @@ public class BotinManager : MonoBehaviour
             suela.GetComponent<Renderer>().material = red;
             SuelaPieIzq.GetComponent<Renderer>().material = red;
             SuelaPieRgh.GetComponent<Renderer>().material = red;
-
         }
         if (collision.gameObject.CompareTag("SuelaGreen"))
         {
