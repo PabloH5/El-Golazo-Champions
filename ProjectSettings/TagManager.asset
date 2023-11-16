@@ -11,6 +11,7 @@ TagManager:
   - BotinRed
   - BotinBlue
   - BotinGreen
+  - Guayo
   layers:
   - Default
   - TransparentFX

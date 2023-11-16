@@ -8,7 +8,7 @@ public class NewBehaviourScript : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("Union"))
         {
-            Destroy(this.gameObject);
+            // Destroy(this.gameObject);
         }
     }
 }
