@@ -429,6 +429,10 @@ PrefabInstance:
       propertyPath: m_Enabled
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 3119596900531567489, guid: acc405edcdfc966468049d2c0ec8dca9, type: 3}
+      propertyPath: sharedProfile
+      value: 
+      objectReference: {fileID: 11400000, guid: ae79bb93475e8c844ad5f773a160b6df, type: 2}
     - target: {fileID: 5921755263813304487, guid: acc405edcdfc966468049d2c0ec8dca9, type: 3}
       propertyPath: m_LocalPosition.x
       value: -1.9833242
