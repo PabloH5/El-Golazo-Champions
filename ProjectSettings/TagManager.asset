@@ -6,15 +6,20 @@ TagManager:
   tags:
   - SuelaBlue
   - Union
+  - SuelaGreen
+  - SuelaRed
+  - BotinRed
+  - BotinBlue
+  - BotinGreen
   layers:
   - Default
   - TransparentFX
   - Ignore Raycast
-  - 
+  - Character
   - Water
   - UI
   - PostProcessing
-  - 
+  - Player
   - 
   - 
   - 
