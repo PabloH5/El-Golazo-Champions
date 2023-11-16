@@ -5983,7 +5983,7 @@ Transform:
   m_GameObject: {fileID: 299500191}
   serializedVersion: 2
   m_LocalRotation: {x: -0.8230694, y: 0.44362015, z: -0.16825303, w: 0.31216803}
-  m_LocalPosition: {x: -1.2670001, y: 1.377, z: 0.15600002}
+  m_LocalPosition: {x: -1.021, y: 1.382, z: 0.116}
   m_LocalScale: {x: 0.5, y: 0.5000066, z: 0.5000066}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -11971,7 +11971,7 @@ Transform:
   m_GameObject: {fileID: 1067469827}
   serializedVersion: 2
   m_LocalRotation: {x: -0.8230694, y: 0.44362015, z: -0.16825303, w: 0.31216803}
-  m_LocalPosition: {x: -1.294, y: 1.359, z: -0.851}
+  m_LocalPosition: {x: -1.0479999, y: 1.364, z: -0.89100003}
   m_LocalScale: {x: 0.5, y: 0.5000066, z: 0.5000066}
   m_ConstrainProportionsScale: 1
   m_Children:
@@ -17967,6 +17967,11 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8b9a305e18de0c04dbd257a21cd47087, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  sharedProfile: {fileID: 11400000, guid: 789f746c1ca9aa84f94b2295a1b04665, type: 2}
+  isGlobal: 1
+  blendDistance: 0
+  weight: 1
+  priority: 0
 --- !u!4 &1842996133
 Transform:
   m_ObjectHideFlags: 0
@@ -18351,6 +18356,54 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 948f4100a11a5c24981795d21301da5c, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  volumeTrigger: {fileID: 2079078869}
+  volumeLayer:
+    serializedVersion: 2
+    m_Bits: 64
+  stopNaNPropagation: 1
+  finalBlitToCameraTarget: 0
+  antialiasingMode: 1
+  temporalAntialiasing:
+    jitterSpread: 0.75
+    sharpness: 0.25
+    stationaryBlending: 0.95
+    motionBlending: 0.85
+  subpixelMorphologicalAntialiasing:
+    quality: 2
+  fastApproximateAntialiasing:
+    fastMode: 0
+    keepAlpha: 0
+  fog:
+    enabled: 1
+    excludeSkybox: 1
+  debugLayer:
+    lightMeter:
+      width: 512
+      height: 256
+      showCurves: 1
+    histogram:
+      width: 512
+      height: 256
+      channel: 3
+    waveform:
+      exposure: 0.12
+      height: 256
+    vectorscope:
+      size: 256
+      exposure: 0.12
+    overlaySettings:
+      linearDepth: 0
+      motionColorIntensity: 4
+      motionGridSize: 64
+      colorBlindnessType: 0
+      colorBlindnessStrength: 1
+  m_Resources: {fileID: 11400000, guid: d82512f9c8e5d4a4d938b575d47f88d4, type: 2}
+  m_ShowToolkit: 0
+  m_ShowCustomSorter: 0
+  breakBeforeColorGrading: 0
+  m_BeforeTransparentBundles: []
+  m_BeforeStackBundles: []
+  m_AfterStackBundles: []
 --- !u!1 &2117040035
 GameObject:
   m_ObjectHideFlags: 0
@@ -18544,7 +18597,7 @@ Transform:
   m_GameObject: {fileID: 919132147874465594}
   serializedVersion: 2
   m_LocalRotation: {x: -0.8230694, y: 0.44362015, z: -0.16825303, w: 0.31216803}
-  m_LocalPosition: {x: -1.279, y: 1.369, z: -0.352}
+  m_LocalPosition: {x: -1.033, y: 1.374, z: -0.39200002}
   m_LocalScale: {x: 0.5, y: 0.5000066, z: 0.5000066}
   m_ConstrainProportionsScale: 1
   m_Children:
