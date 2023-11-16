@@ -5,13 +5,11 @@ TagManager:
   serializedVersion: 2
   tags:
   - Anchor
-  - Union
-  - Suela
   - Botin
-  - Cordon
-  - SuelaRed
-  - SuelaGreen
   - SuelaBlue
+  - SuelaGreen
+  - Union
+  - SuelaRed
   layers:
   - Default
   - TransparentFX
@@ -19,7 +17,7 @@ TagManager:
   - 
   - Water
   - UI
-  - 
+  - PostProcessing
   - 
   - 
   - 
