@@ -17,8 +17,8 @@ public class EscenaCambio : MonoBehaviour
         
     }
 
-    public void CambiarEscena(string Estadio)
+    public void CambiarEscena()
     {
-        SceneManager.LoadScene("Estadio");
+        SceneManager.LoadScene("Badabadun");
     }
 }

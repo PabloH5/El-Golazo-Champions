@@ -12,15 +12,12 @@ public class GuayoDestro : MonoBehaviour
     {
         pos = prefab.transform.position;
     }
-
     private void OnTriggerEnter(Collider collision)
     {
         if (collision.gameObject.CompareTag("Guayo"))
         {
             Quaternion rotation = Quaternion.Euler(fixedRotation);
-
             Instantiate(prefab, pos, rotation);
-
             Destroy(this.gameObject);
         }
     }
