@@ -14,6 +14,13 @@ public class ControladorAnim : MonoBehaviour
     public void ActivarMov()
     {
         animadorObj.SetBool("Dale", true);
+        Destroy (GameObject.FindWithTag("BotinRed"));
+        Destroy (GameObject.FindWithTag("BotinBlue"));
+        Destroy (GameObject.FindWithTag("BotinGreen"));
+        Destroy (GameObject.FindWithTag("SuelaRed"));
+        Destroy (GameObject.FindWithTag("SuelaGreen"));
+        Destroy (GameObject.FindWithTag("SuelaBlue"));
+
 
     }
 }

@@ -301,3 +301,4 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   prefab: {fileID: 4720465016985610574}
+  parentTransform: {fileID: 4408067047863907477, guid: b5f000320481fa1429212270b6ffbea5, type: 3}

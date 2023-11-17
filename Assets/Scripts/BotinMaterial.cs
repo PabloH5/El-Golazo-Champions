@@ -32,9 +32,9 @@ public class BotinMaterial : MonoBehaviour
             BotinPieIzq.GetComponent<Renderer>().material = green;
             BotinPieRgh.GetComponent<Renderer>().material = green;
         }
-        if (collision.gameObject.CompareTag("Matalo"))
-        {
-            Destroy(this.gameObject);
-        }
+        // if (collision.gameObject.CompareTag("Matalo"))
+        // {
+        //     Destroy(this.gameObject);
+        // }
     }
 }
