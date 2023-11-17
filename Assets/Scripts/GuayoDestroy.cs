@@ -2,11 +2,11 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class GuayoDestro : MonoBehaviour
 {
     private void OnTriggerEnter(Collider collision)
     {
-        if (collision.gameObject.CompareTag("Union"))
+        if (collision.gameObject.CompareTag("Guayo"))
         {
             Destroy(this.gameObject);
         }

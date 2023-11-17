@@ -5,11 +5,8 @@ using UnityEngine;
 public class BotinManager : MonoBehaviour
 {
     public GameObject suela;
-    public GameObject Smoke;
-
-    public GameObject BotinPieIzq;
+    // public GameObject Smoke;
     public GameObject SuelaPieIzq;
-    public GameObject BotinPieRgh;
     public GameObject SuelaPieRgh;
 
     public Material red;
@@ -20,7 +17,7 @@ public class BotinManager : MonoBehaviour
     {
         if (collision.gameObject.CompareTag("SuelaRed"))
         {
-            Smoke.SetActive(true);
+            // Smoke.SetActive(true);
             suela.SetActive(true);
             suela.GetComponent<Renderer>().material = red;
             SuelaPieIzq.GetComponent<Renderer>().material = red;
@@ -28,7 +25,7 @@ public class BotinManager : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("SuelaGreen"))
         {
-            Smoke.SetActive(true);
+            // Smoke.SetActive(true);
             suela.SetActive(true);
             suela.GetComponent<Renderer>().material = green;
             SuelaPieIzq.GetComponent<Renderer>().material = green;
@@ -36,11 +33,12 @@ public class BotinManager : MonoBehaviour
         }
         if (collision.gameObject.CompareTag("SuelaBlue"))
         {
-            Smoke.SetActive(true);
+            // Smoke.SetActive(true);
             suela.SetActive(true);
             suela.GetComponent<Renderer>().material = blue;
             SuelaPieIzq.GetComponent<Renderer>().material = blue;
             SuelaPieRgh.GetComponent<Renderer>().material = blue;
         }
+        
     }
 }
