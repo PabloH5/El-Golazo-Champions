@@ -6,7 +6,10 @@ public class ActivateGuayos : MonoBehaviour
 {
     public GameObject Botin1;
     public GameObject Botin2;
-    
+    public GameObject BotinCOLOR;
+    public GameObject BotinCOLOR2;
+
+    public GameObject Palanca;
     public Material red;
     public Material green;
     public Material blue;
@@ -16,6 +19,9 @@ public class ActivateGuayos : MonoBehaviour
         {
             Botin1.SetActive(true);
             Botin2.SetActive(true);
+            Palanca.SetActive(true);
+            Destroy(BotinCOLOR);
+            Destroy(BotinCOLOR2);
         }
     }
 }
