@@ -38,7 +38,7 @@ RenderSettings:
   m_ReflectionIntensity: 1
   m_CustomReflection: {fileID: 0}
   m_Sun: {fileID: 0}
-  m_IndirectSpecularColor: {r: 0.094288595, g: 0.11945037, b: 0.15523562, a: 1}
+  m_IndirectSpecularColor: {r: 0.094288744, g: 0.11945031, b: 0.15523598, a: 1}
   m_UseRadianceAmbientProbe: 0
 --- !u!157 &3
 LightmapSettings:
@@ -391,15 +391,15 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: caa9a0e7bcb653246b51f50917b64f76, type: 3}
       propertyPath: m_LocalScale.x
-      value: 0.018275205
+      value: 0.011814006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: caa9a0e7bcb653246b51f50917b64f76, type: 3}
       propertyPath: m_LocalScale.y
-      value: 0.018275205
+      value: 0.011814006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: caa9a0e7bcb653246b51f50917b64f76, type: 3}
       propertyPath: m_LocalScale.z
-      value: 0.018275205
+      value: 0.011814006
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: caa9a0e7bcb653246b51f50917b64f76, type: 3}
       propertyPath: m_LocalPosition.x
@@ -452,6 +452,9 @@ PrefabInstance:
     - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: caa9a0e7bcb653246b51f50917b64f76, type: 3}
       insertIndex: -1
       addedObject: {fileID: 156115187}
+    - targetCorrespondingSourceObject: {fileID: 919132149155446097, guid: caa9a0e7bcb653246b51f50917b64f76, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 156115189}
   m_SourcePrefab: {fileID: 100100000, guid: caa9a0e7bcb653246b51f50917b64f76, type: 3}
 --- !u!1 &156115186 stripped
 GameObject:
@@ -520,6 +523,27 @@ Light:
   m_UseViewFrustumForShadowCasterCull: 1
   m_ShadowRadius: 0
   m_ShadowAngle: 0
+--- !u!65 &156115189
+BoxCollider:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 156115186}
+  m_Material: {fileID: 0}
+  m_IncludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_ExcludeLayers:
+    serializedVersion: 2
+    m_Bits: 0
+  m_LayerOverridePriority: 0
+  m_IsTrigger: 0
+  m_ProvidesContacts: 0
+  m_Enabled: 1
+  serializedVersion: 3
+  m_Size: {x: 37.40558, y: 57.546585, z: 39.22753}
+  m_Center: {x: 0.8953936, y: 28.273298, z: 0.7311858}
 --- !u!1 &308009657
 GameObject:
   m_ObjectHideFlags: 0
@@ -1275,16 +1299,28 @@ PrefabInstance:
     m_TransformParent: {fileID: 0}
     m_Modifications:
     - target: {fileID: -8679921383154817045, guid: 2a42cf8ee0d756440a19ef7ffd1af64d, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 0.64645
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a42cf8ee0d756440a19ef7ffd1af64d, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 0.64645
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a42cf8ee0d756440a19ef7ffd1af64d, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 0.64645
+      objectReference: {fileID: 0}
+    - target: {fileID: -8679921383154817045, guid: 2a42cf8ee0d756440a19ef7ffd1af64d, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -27.448
+      value: -27.53
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a42cf8ee0d756440a19ef7ffd1af64d, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.55
+      value: 3.19
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a42cf8ee0d756440a19ef7ffd1af64d, type: 3}
       propertyPath: m_LocalPosition.z
-      value: -0.26507
+      value: -0.28
       objectReference: {fileID: 0}
     - target: {fileID: -8679921383154817045, guid: 2a42cf8ee0d756440a19ef7ffd1af64d, type: 3}
       propertyPath: m_LocalRotation.w
@@ -1363,9 +1399,9 @@ CapsuleCollider:
   m_Enabled: 1
   serializedVersion: 2
   m_Radius: 0.441679
-  m_Height: 1.3473754
+  m_Height: 1.5192305
   m_Direction: 1
-  m_Center: {x: -0.0038220882, y: 0.84843826, z: -0.21548522}
+  m_Center: {x: -0.0038220922, y: 0.7625097, z: -0.2154852}
 --- !u!114 &998725256
 MonoBehaviour:
   m_ObjectHideFlags: 0
