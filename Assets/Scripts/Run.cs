@@ -9,7 +9,6 @@ public class Run : MonoBehaviour
 {
     public InputActionReference runReference = null;
     public DynamicMoveProvider dynamicMoveProvider;
-
     public float runningSpeedMultiplier = 2f;
     public float runningSpeedDebuff = 0.1f;
     public float cooldownDebuff = 0.0f;
@@ -25,18 +24,11 @@ public class Run : MonoBehaviour
     }
     void Start()
     {
-        // Comienza a invocar el método repetidamente con un retraso inicial y luego cada 2.5 segundos.
         InvokeRepeating(nameof(SpeedDebuff), cooldownDebuff, cooldownDebuff);
     }
-
     void Update()
     {
         Debug.Log("Velocidad actual: " + dynamicMoveProvider.moveSpeed);
-    }
-
-    private void OnDestroy()
-    {
-        // runReference.action.started -= StartRun;
     }
 
     private void StartRun(InputAction.CallbackContext context)
@@ -68,6 +60,5 @@ public class Run : MonoBehaviour
                 Debug.Log("Velocidad actual reducida: " + dynamicMoveProvider.moveSpeed);
             }
         }
-
     }
 }
