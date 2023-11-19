@@ -16,7 +16,7 @@ Bienvenidos a "Golazo Champions", una experiencia de Realidad Virtual que lleva 
 Para probar el experiencia 
 - **Descargar la carpeta en el link**: https://www.mediafire.com/file/9q5yzw1jadnaktk/Experiencia_RV_El_Golazo.zip/file
 - Extraer y ejecutar el archivo: ElGolazo.exe
-- Tranquilo es seguro 🫡
+- Tranquilo es seguro ✌🏼
 
 ## Cómo Empezar 🎮
 
